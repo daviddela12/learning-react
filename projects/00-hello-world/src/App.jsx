@@ -6,6 +6,7 @@ import {Title} from "./Title.jsx";
 import {UserName} from "./UserName.jsx";
 import {UserNameWithChildren} from "./UserNameWithChildren.jsx";
 import {TitleWithSpreadOperator} from "./TitleWithSpreadOperator.jsx";
+import {ButtonWithState} from "./ButtonWithState.jsx";
 
 function App() {
   const [count, setCount] = useState(0)
@@ -16,6 +17,7 @@ function App() {
   return (
     <>
         <Title title="Hola mundo" enlace="ejemplo"/>
+        <ButtonWithState initialValue={false}></ButtonWithState>
         <TitleWithSpreadOperator {...ops}></TitleWithSpreadOperator>
         <UserName formatUserName={formatUserName} name="david"/>
         <UserNameWithChildren>Hi, I'm a children</UserNameWithChildren>
