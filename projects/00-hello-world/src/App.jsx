@@ -5,15 +5,18 @@ import './App.css'
 import {Title} from "./Title.jsx";
 import {UserName} from "./UserName.jsx";
 import {UserNameWithChildren} from "./UserNameWithChildren.jsx";
+import {TitleWithSpreadOperator} from "./TitleWithSpreadOperator.jsx";
 
 function App() {
   const [count, setCount] = useState(0)
 
   const formatUserName = (name) => `@${name}`
+    const ops = {title:"hola mundo", enlace:"enlace"}
 
   return (
     <>
         <Title title="Hola mundo" enlace="ejemplo"/>
+        <TitleWithSpreadOperator {...ops}></TitleWithSpreadOperator>
         <UserName formatUserName={formatUserName} name="david"/>
         <UserNameWithChildren>Hi, I'm a children</UserNameWithChildren>
       <div>
