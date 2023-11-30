@@ -1,5 +1,8 @@
-export function Title({title}) {
+export function Title({title, enlace}) {
     return (
+        <>
         <h1 style={{color: '#F00', fontFamily: 'system-ui'}}>{title}</h1>
+        <a href={`http://${enlace}`}>Enlace ejemplo</a>
+        </>
     )
 }

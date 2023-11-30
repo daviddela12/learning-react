@@ -6,7 +6,7 @@ import {Title} from "./Title.jsx";
 
 ReactDOM.createRoot(document.getElementById('root')).render(
   <React.StrictMode>
-      <Title title="Hola mundo"/>
+      <Title title="Hola mundo" enlace="ejemplo"/>
       <App />
   </React.StrictMode>,
 )
