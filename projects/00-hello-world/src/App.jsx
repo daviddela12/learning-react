@@ -14,6 +14,8 @@ function App() {
   const formatUserName = (name) => `@${name}`
     const ops = {title:"hola mundo", enlace:"enlace"}
 
+    const [isFollowing, setIsFollowing] = useState(false)
+
   return (
     <>
         <Title title="Hola mundo" enlace="ejemplo"/>
@@ -41,6 +43,13 @@ function App() {
       <p className="read-the-docs">
         Click on the Vite and React logos to learn more
       </p>
+        <hr/>
+        <hr/>
+        <hr/>
+        <hr/>
+        <h1>PARTE2: El initialState sólo se ejecuta una vez</h1>
+        <ButtonWithState initialValue={isFollowing}/>
+        <button onClick={() => setIsFollowing(!isFollowing)}>Cambia estado isFollowing del padre a: {String(isFollowing)}</button>
     </>
   )
 }
