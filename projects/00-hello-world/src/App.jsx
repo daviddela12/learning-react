@@ -1,4 +1,4 @@
-import React, { useState } from 'react'
+import { useState } from 'react'
 import reactLogo from './assets/react.svg'
 import viteLogo from '/vite.svg'
 import './App.css'
@@ -15,19 +15,19 @@ function App() {
     const ops = {title:"hola mundo", enlace:"enlace"}
 
     const [isFollowing, setIsFollowing] = useState(false)
-
+  
   return (
     <>
         <Title title="Hola mundo" enlace="ejemplo"/>
         <ButtonWithState initialValue={false}></ButtonWithState>
         <TitleWithSpreadOperator {...ops}></TitleWithSpreadOperator>
         <UserName formatUserName={formatUserName} name="david"/>
-        <UserNameWithChildren>Hi, I'm a children</UserNameWithChildren>
+        <UserNameWithChildren>Hi, I am a children</UserNameWithChildren>
       <div>
-        <a href="https://vitejs.dev" target="_blank">
+        <a href="https://vitejs.dev" target="_blank" rel="noreferrer">
           <img src={viteLogo} className="logo" alt="Vite logo" />
         </a>
-        <a href="https://react.dev" target="_blank">
+        <a href="https://react.dev" target="_blank" rel="noreferrer">
           <img src={reactLogo} className="logo react" alt="React logo" />
         </a>
       </div>
