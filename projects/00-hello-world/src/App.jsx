@@ -6,7 +6,7 @@ import {Title} from "./Title.jsx";
 import {UserName} from "./UserName.jsx";
 import {UserNameWithChildren} from "./UserNameWithChildren.jsx";
 import {TitleWithSpreadOperator} from "./TitleWithSpreadOperator.jsx";
-import {ButtonWithState} from "./ButtonWithState.jsx";
+import { ButtonWithState } from './ButtonWithState.jsx';
 
 function App() {
   const [count, setCount] = useState(0)
